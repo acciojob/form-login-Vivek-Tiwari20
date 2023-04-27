@@ -1,21 +1,18 @@
- let fName = document.getElementById("fname");
- let lName = document.getElementById("lname");
+function  getFormvalue(){
+        let fname = document.getElementById("fname");
+        let lname = document.getElementById("lname");
 
- let form = document.getElementById("form1");
+        fname = document.getElementById("fname").value;
+         lname = document.getElementById("lname").value;
 
- let submit = document.getElementById("submit");
+        let submit = document.getElementById("submit");
 
- submit.addEventListener("click",btnfun);
+        alert(fname+" "+lname);
 
- function btnfun(){
-        fName = document.getElementById("fname").value;
-      lName = document.getElementById("lname").value;
 
-     let firstName = document.createElement("p");
-      firstName.innerText = fName;
-
-      let lastName = document.createElement("p");
-      lastName.innerText = lName;
-
-      alert(fName+" "+lName)
  }
+
+
+     submit.addEventListener("click",getFormvalue);
+
+         
